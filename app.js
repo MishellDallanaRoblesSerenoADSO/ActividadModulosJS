@@ -1,6 +1,5 @@
-import tabla from "./components/tabla.js";
+import tabla from "./components/formulario.js";
 await tabla.Api();
 
-form.resultado()
 tabla.Solucion();
 // console.log(tabla.data);

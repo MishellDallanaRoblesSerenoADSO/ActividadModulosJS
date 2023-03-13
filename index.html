@@ -4,35 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
     <script src="app.js" type="module" defer></script>
 </head>
-<body>
-    <h1>ni Dios entiende esta vaina nojodaaa</h1>
+<body style="background-image: linear-gradient( to right, #b7fae9, #54ddff);">
     
 
-    <form id="myFormulario">
-        <label> Ingrese su nombre </label>
-        <input type="text" name="Nombre" placeholder="Nombre" required>
-        <label> Ingrese su nota </label>
-        <input type="text" name="Nota" placeholder="Nota" required> 
-        <input type="submit" value="enviar">
-    </form> 
-    <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Taditional</th>
-                <th>14-Point-Range</th>
-                <th>Letter</th>
-                <th>SBG-Rating</th>
-                <th>Proficiency-Level-With-Standard</th>
-            </tr>
-        </thead>
-        <tbody id="mytabla">
+    <div class="container-fluid">
+        <div class="row gx4 gy4" style="padding: 20px;">
+            <div class="col-sm-6 col-md-12" style="padding: 30px; justify-content:center; align-items: center">
 
-        </tbody>
-    </table>
+                <form id="myFormulario">
+                    <label style="font-size: 20px;"> Ingrese su nombre </label>
+                    <input  type="text" name="Nombre" placeholder="Nombre" required>
+                    <label style="font-size: 20px;"> Ingrese su Traditional </label>
+                    <input type="text" name="Nota" placeholder="Nota" required> 
+                    <input  style="background-color: #414141; color: aliceblue;" type="submit" value="enviar"> <br>
+                    <button  style="background-color: #414141; color: aliceblue;" id="mylist">Listar</button> 
+                </form> 
+            </div>
+        </div>
+    </div>
+
+
+     
+    <div class="col-sm-12 col-md-12 ">
+        <div class="row px-4 py4"> 
+            
+            <table class="table table-success table-info" style="justify-content:center; align-items: center">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Taditional</th>
+                        <th>14-Point-Range</th>
+                        <th>Letter</th>
+                        <th>SBG-Rating</th>
+                        <th>Proficiency-Level-With-Standard</th>
+                    </tr>
+        
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>90-100</td>
+                        <td>12-14</td>
+                        <td>A</td>
+                        <td>4</td>
+                        <td>Exceeds proficiency</td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>80-89</td>
+                        <td>9-11</td>
+                        <td>B</td>
+                        <td>3</td>
+                        <td>Demonstrates proficiency</td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>70-79</td>
+                        <td>6-8</td>
+                        <td>C</td>
+                        <td>2</td>
+                        <td>Approaches proficiency</td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>60-69</td>
+                        <td>3-5</td>
+                        <td>D</td>
+                        <td>1</td>
+                        <td>Falls well below proficiency</td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">5</th>
+                        <td> 60 </td>
+                        <td>1-2</td>
+                        <td>E</td>
+                        <td>0</td>
+                        <td>Lacks all proficiency</td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">6</th>
+                        <td> 0 </td>
+                        <td>0</td>
+                        <td>Z</td>
+                        <td>0</td>
+                        <td>No attempt made</td>
+                      </tr>
+        
+                </thead>
+                <tbody id="mytabla">
+        
+                </tbody>
+            </table>
+    
+        </div>
+    </div>
 
 </body>
 </html>
